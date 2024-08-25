@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leave Application</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: white;
+			border: 3px solid #f1f1f1;
+			margin: 5% auto 15% auto;
+			padding: 20px;
+			width: 50%;
+		}
+		input[type=text], input[type=date], textarea {
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			width: 100%;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+		}
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+		.container {
+			padding: 16px;
+		}
+		@media screen and (max-width: 300px) {
+			.cancelbtn {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<form action="LeaveApplication.php" method="post">
+		<div class="imgcontainer">
+			<img src="img_avatar2.png" alt="Avatar" class="avatar">
+		</div>
+		<div class="container">
+			<label for="name"><b>Name</b></label>
+			<input type="text" placeholder="Enter Name" name="name" required>
+			<label for="rollno"><b>Roll No.</b></label>
+			<input type="text" placeholder="Enter Roll No." name="rollno" required>
+			<label for="date"><b>From Date</b></label>
+			<input type="date" name="date" required>
+            <label for="date"><b>To Date</b></label>
+			<input type="date" name="date" required>
+			<label for="reason"><b>Reason</b></label>
+			<textarea placeholder="Enter Reason" name="reason" required></textarea>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+</body>
+</html>
+

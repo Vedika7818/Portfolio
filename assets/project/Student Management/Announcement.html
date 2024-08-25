@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Announcement</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: #4CAF50;
+		}
+		.container {
+			background-color: white;
+			border: 3px solid #f1f1f1;
+			margin: 5% auto 15% auto;
+			padding: 20px;
+			width: 50%;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+		}
+		textarea {
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			width: 100%;
+			height: 200px;
+			border-radius: 4px;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			border-radius: 4px;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+	</style>
+</head>
+<body>
+	<h1>Admin Announcement</h1>
+	<div class="container">
+		<form action="Announcement.php" method="post">
+			<label for="subject"><b>Subject</b></label>
+			<input type="text" placeholder="Enter subject" name="subject" required>
+			<label for="message"><b>Message</b></label>
+			<textarea placeholder="Enter message" name="message" required></textarea>
+			<button type="submit">Send</button>
+		</form>
+	</div>
+</body>
+</html>

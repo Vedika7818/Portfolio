@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: white;
+			border: 3px solid #f1f1f1;
+			margin: 5% auto 15% auto;
+			padding: 20px;
+			width: 50%;
+		}
+		input[type=text], input[type=password] {
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			width: 100%;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+		}
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+		.container {
+			padding: 16px;
+		}
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+		@media screen and (max-width: 300px) {
+			span.psw {
+				display: block;
+				float: none;
+			}
+			.cancelbtn {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar navbar-expand-lg bg-light navbar-light">
+		<div class="container-fluid">
+			<a href="index.html" class="navbar-brand">Galaxy </head><span>Pizza</span></a>
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+				<div class="navbar-nav ml-auto">
+					<a href="index.html" class="nav-item nav-link active">Home</a>
+					<a href="Certificate.html" class="nav-item nav-link">Certificate</a>
+					<a href="feature.html" class="nav-item nav-link">Announcements</a>
+					<a href="menu.html" class="nav-item nav-link">Menu</a>
+					<a href="booking.html" class="nav-item nav-link">Reservation</a>
+					<a href="contact.html" class="nav-item nav-link">Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<form action="LoginPage.php" method="post">
+		<div class="imgcontainer">
+			<img src="img_avatar2.png" alt="Avatar" class="avatar">
+		</div>
+		<div class="container">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+			<button type="submit">Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+	</form>
+</body>
+</html>
